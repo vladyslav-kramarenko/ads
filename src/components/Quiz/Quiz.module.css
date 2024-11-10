@@ -1,34 +1,83 @@
 .quiz {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    /*margin: 20px auto;*/
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #625D5B;
+    /*background-color: #4c4543; !* Dark background for quiz *!*/
+    color: #fff;
     text-align: center;
+}
+
+.quizBody{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .quiz h2 {
     font-size: 1.5rem;
-    color: #333;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for the question */
 }
 
 .quiz button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #3a8a63;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .quiz button:hover {
+    background-color: #e0e0e0;
+}
+
+.quiz .active {
+    background-color: #3a8a63; /* Green background for selected option */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+.navButtons{
+    align-content: end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz .nextButton {
+    background-color: #3a8a63;
+    color: #fff;
+    width: 100px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+.quiz .nextButton:hover {
     background-color: #2e6b4f;
 }
 
 .quiz input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 1rem;
 }

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import ReactPixel from "react-facebook-pixel";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 import styles from "./Quiz.module.css";
-import "../../i18n"; // Make sure i18n is imported in your app
+import "../../i18n"; // Ensure i18n is imported in your app
 
 interface Answers {
     reason: string;
@@ -12,7 +12,6 @@ interface Answers {
     email: string;
 }
 
-// Initialize React Pixel once, outside the component
 ReactPixel.init("YOUR_PIXEL_ID");
 ReactPixel.pageView();
 
@@ -37,7 +36,7 @@ const sendLeadData = async (leadData: Answers) => {
 };
 
 const Quiz: React.FC = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     const [step, setStep] = useState<number>(1);
     const [answers, setAnswers] = useState<Answers>({
         reason: "",
@@ -58,45 +57,73 @@ const Quiz: React.FC = () => {
     };
 
     const handleSubmit = () => {
-        ReactPixel.track("Lead", { value: answers.amount });
+        ReactPixel.track("Lead", {value: answers.amount});
         sendLeadData(answers);
     };
 
     return (
-        <div className={styles.quiz}>
+        <div id="quiz" className={styles.quiz}>
             {step === 1 && (
-                <div>
+                <div className={styles.quizBody}>
                     <h2>{t("quiz.question1")}</h2>
-                    <button onClick={() => handleAnswerChange("reason", "housing")}>
+                    <button
+                        onClick={() => handleAnswerChange("reason", "housing")}
+                        className={answers.reason === "housing" ? styles.active : ""}
+                    >
                         {t("quiz.housing")}
                     </button>
-                    <button onClick={() => handleAnswerChange("reason", "investment")}>
+                    <button
+                        onClick={() => handleAnswerChange("reason", "investment")}
+                        className={answers.reason === "investment" ? styles.active : ""}
+                    >
                         {t("quiz.investment")}
                     </button>
-                    <button onClick={() => handleAnswerChange("reason", "other")}>
+                    <button
+                        onClick={() => handleAnswerChange("reason", "other")}
+                        className={answers.reason === "other" ? styles.active : ""}
+                    >
                         {t("quiz.other")}
                     </button>
-                    <button onClick={handleNext}>{t("quiz.next")} →</button>
+                    <div className={styles.navButtons}>
+                        <button onClick={handleNext} className={styles.nextButton}>
+                            {t("quiz.next")} →
+                        </button>
+                    </div>
                 </div>
             )}
             {step === 2 && (
-                <div>
+                <div className={styles.quizBody}>
                     <h2>{t("quiz.investmentAmount")}</h2>
-                    <button onClick={() => handleAnswerChange("amount", "$100k")}>
+                    <button
+                        onClick={() => handleAnswerChange("amount", "$100k")}
+                        className={answers.amount === "$100k" ? styles.active : ""}
+                    >
                         $100k
                     </button>
-                    <button onClick={() => handleAnswerChange("amount", "$150k")}>
+                    <button
+                        onClick={() => handleAnswerChange("amount", "$150k")}
+                        className={answers.amount === "$150k" ? styles.active : ""}
+                    >
                         $150k
                     </button>
-                    <button onClick={() => handleAnswerChange("amount", "$250k")}>
+                    <button
+                        onClick={() => handleAnswerChange("amount", "$250k")}
+                        className={answers.amount === "$250k" ? styles.active : ""}
+                    >
                         $250k
                     </button>
-                    <button onClick={handlePrev}>← {t("quiz.prev")}</button>
-                    <button onClick={handleNext}>{t("quiz.next")} →</button>
+                    <div className={styles.navButtons}>
+                        <button onClick={handlePrev} className={styles.nextButton}>
+                            ← {t("quiz.prev")}
+                        </button>
+                        <button onClick={handleNext} className={styles.nextButton}>
+                            {t("quiz.next")} →
+                        </button>
+                    </div>
                 </div>
             )}
             {step === 3 && (
-                <div>
+                <div className={styles.quizBody}>
                     <h2>{t("quiz.contactDetails")}</h2>
                     <input
                         type="text"
@@ -113,8 +140,16 @@ const Quiz: React.FC = () => {
                         placeholder={t("quiz.emailPlaceholder")}
                         onChange={(e) => handleAnswerChange("email", e.target.value)}
                     />
-                    <button onClick={handlePrev}>← {t("quiz.prev")}</button>
-                    <button onClick={handleSubmit}>{t("quiz.send")}</button>
+
+                    <div className={styles.navButtons}>
+                        <button onClick={handlePrev} className={styles.nextButton}>
+                            ← {t("quiz.prev")}
+                        </button>
+                        <button onClick={handleSubmit} className={styles.nextButton}>
+                            {t("quiz.send")}
+                        </button>
+
+                    </div>
                 </div>
             )}
         </div>
