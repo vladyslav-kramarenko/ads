@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    cursor: pointer;
+}
+
+.orangeButton{
+    border: none;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-family: Proxima Nova, serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.378px;
+    background: #E1886C;
+    transition: all 0.5s;
+}
+
+.orangeButton:hover{
+    background: #3A8A63;
+    transition: all 0.5s;
+}
