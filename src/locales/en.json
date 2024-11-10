@@ -1,0 +1,24 @@
+{
+  "header": {
+    "title": "Reliable Real Estate Investment",
+    "subTitle": "Up to 40% Profit"
+  },
+  "quiz": {
+    "question1": "What is your primary reason for choosing real estate?",
+    "housing": "Housing for yourself",
+    "investment": "Investment for resale",
+    "other": "Other",
+    "next": "Next",
+    "prev": "Prev",
+    "investmentAmount": "Investment amount?",
+    "contactDetails": "Contact details",
+    "namePlaceholder": "Name",
+    "phonePlaceholder": "Phone",
+    "emailPlaceholder": "Email",
+    "send": "Send"
+  },
+  "about": {
+    "title": "ABOUT",
+    "description": "DESIRE is a premium hotel-residential complex located in Antalya..."
+  }
+}
