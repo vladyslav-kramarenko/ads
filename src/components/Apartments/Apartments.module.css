@@ -1,0 +1,16 @@
+.apartments {
+    background-color: #625D5B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.apartments h3{
+    color: white;
+}
+
+.apartments h3 span{
+
+    padding:10px 5px ;
+}
