@@ -1,0 +1,54 @@
+.advantages {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #F2EEE9;
+    font-family: Montserrat,sans-serif;
+}
+
+.advantages .investDescription{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.advantages p {
+    color: rgb(98, 93, 91);
+}
+
+.advantages h2,
+.advantageItem h3  {
+    color: #e1886c;
+}
+
+.advantages a {
+    margin-bottom: 50px;
+}
+
+.advantageItem {
+    padding-bottom: 20px;
+
+}
+
+.advantageItem p{
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 25px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.advantageItem h3 {
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.advantageItem img {
+    width: 64px;
+    height: 64px;
+}
