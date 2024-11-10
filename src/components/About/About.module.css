@@ -1,0 +1,18 @@
+.about {
+    background-color: #f2eee9;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2rem;
+    color: #e1886c;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #625d5b;
+    margin: 10px 0;
+}

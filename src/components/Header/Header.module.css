@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 20px;
+    background-color: #363030;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.header .logo img{
+    width: 100px;
+    height: 54px;
+}
+
+.header .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.header .subtitle {
+    line-height: 1.5;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    /*font-size: 1.2rem;*/
+    /*color: #3a8a63;*/
+    background-color: #3a8a63;
+}
+
+.header button{
+    /*text-transform: uppercase;*/
+    /*color: #FFF;*/
+    /*text-align: center;*/
+    /*font-family: Proxima Nova, serif;*/
+    /*font-style: normal;*/
+    /*font-weight: 300;*/
+    /*line-height: normal;*/
+    /*letter-spacing: 1.378px;*/
+    /*background: #E1886C;*/
+    /*transition: all 0.5s;*/
+
+    width: 100%;
+    max-width: 260px;
+    font-size: 18px;
+    height: 59.788px;
+    margin: 40px 0 0;
+}
+
+.header .description{
+
+    padding: 40px 0 0;
+}
