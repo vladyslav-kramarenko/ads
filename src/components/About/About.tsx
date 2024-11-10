@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './About.module.css';
+
 const About: React.FC = () => {
     return (
         <section className={styles.about}>
@@ -15,7 +16,11 @@ const About: React.FC = () => {
                 <p>
                     The project is actively under construction, but there is still an opportunity to invest under
                     attractive
-                    conditions! <strong>Completion is scheduled for Q4&nbsp;2025!</strong>
+                    conditions!
+                </p>
+                <p className={styles.completion}>
+                    Completion is scheduled for
+                    <span className={"accent"}>Q4&nbsp;2025!</span>
                 </p>
             </div>
         </section>
