@@ -7,18 +7,24 @@ const Header: React.FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <img src="img/desire-logo.png" alt="DESIRE Logo"/>
+                <img src="img/desire-logo.svg" alt="DESIRE Logo"/>
             </div>
-            <h1 className={styles.title}>{t('header.title')}</h1>
-            <p className={styles.subtitle}>{t('header.subTitle')}</p>
-            <p className={styles.description}>
-                DESIRE – Premium Hotel-Residential Complex
-                <br/>
-                (Antalya, Turkey)
-            </p>
-            <button className={"orangeButton"}>
-                Leave a request
-            </button>
+            <div className={styles.headerText}>
+                <h1 className={styles.title}>{t('header.title')}</h1>
+                <span className={styles.subtitle}>
+                    <p className={"accent"}>{t('header.subTitle')}</p>
+                </span>
+                <p className={styles.description}>
+                    DESIRE <br/> Premium Hotel-Residential Complex
+                    <br/>
+                    (Antalya, Turkey)
+                </p>
+                <a className={"orangeButton"} href={"#quiz"}>Leave a request</a>
+                {/*<button className={"orangeButton"}>*/}
+                {/*    Leave a request*/}
+                {/*</button>*/}
+            </div>
+            <img className="sectionDividerImg" src={"img/img.png"}/>
         </header>
     );
 };

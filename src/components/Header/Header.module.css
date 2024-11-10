@@ -1,57 +1,78 @@
 .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 50px 20px 20px;
+    /*align-items: center;*/
+    /*align-items: left;*/
+    /*justify-content: left;*/
     background-color: #363030;
     color: white;
     text-align: center;
-    padding-bottom: 50px;
+}
+
+.headerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .header .logo img{
+    padding-top: 50px;
     width: 100px;
-    height: 54px;
 }
 
 .header .title {
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-size: 26px;
     font-weight: bold;
     margin: 0;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
+/*.header .title,*/
+/*.header .subtitle,*/
+/*.header .description{*/
+/*    max-width: 400px;*/
+/*}*/
+
 .header .subtitle {
+    padding: 3px 10px;
     line-height: 1.5;
     font-size: 26px;
     font-weight: 700;
-    text-transform: uppercase;
-    padding: 3px 10px;
+    /*text-transform: uppercase;*/
+    /*padding: 3px 10px;*/
+    width: 268px;
     /*font-size: 1.2rem;*/
     /*color: #3a8a63;*/
-    background-color: #3a8a63;
+    /*background-color: #3a8a63;*/
 }
 
-.header button{
-    /*text-transform: uppercase;*/
-    /*color: #FFF;*/
-    /*text-align: center;*/
-    /*font-family: Proxima Nova, serif;*/
-    /*font-style: normal;*/
-    /*font-weight: 300;*/
-    /*line-height: normal;*/
-    /*letter-spacing: 1.378px;*/
-    /*background: #E1886C;*/
-    /*transition: all 0.5s;*/
-
-    width: 100%;
-    max-width: 260px;
-    font-size: 18px;
-    height: 59.788px;
-    margin: 40px 0 0;
+.header button, .header .headerText a{
+    /*width: 100%;*/
+    /*max-width: 268px;*/
+    /*font-size: 18px;*/
+    /*!*height: 59.788px;*!*/
+    /*height: 50px;*/
+    /*margin: 40px 0 0;*/
+    /*!*padding: 10px 40px;*!*/
+    /*text-decoration: none;*/
+    /*align-content: center;*/
+    margin-bottom: 50px;
 }
 
 .header .description{
 
-    padding: 40px 0 0;
+    font-size: 18px;
+    padding: 20px 0 0;
+}
+
+
+@media (max-width: 800px) {
+    .header .headerImg{
+        margin: 0;
+    }
+    .headerText {
+        padding: 10px;
+    }
 }

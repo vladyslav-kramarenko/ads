@@ -5,6 +5,7 @@ import Quiz from './components/Quiz/Quiz';
 import About from './components/About/About';
 import i18n from './i18n';
 import Advantages from "./components/Advantages/Advantages";
+import Apartments from "./components/Apartments/Apartments";
 
 const LanguageWrapper: React.FC = () => {
     const { lang } = useParams<{ lang: string }>();
@@ -18,10 +19,11 @@ const LanguageWrapper: React.FC = () => {
 
     return (
         <>
-            <Header />
-            <Quiz />
-            <About />
+            <Header/>
+            <Quiz/>
+            <About/>
             <Advantages/>
+            <Apartments/>
         </>
     );
 };
@@ -30,10 +32,7 @@ const App: React.FC = () => {
     return (
         <Router>
             <Routes>
-                {/* Redirect from the root to English by default */}
                 <Route path="/" element={<Navigate replace to="/en" />} />
-
-                {/* Language-specific routes */}
                 <Route path="/:lang" element={<LanguageWrapper />} />
             </Routes>
         </Router>
