@@ -1,16 +1,21 @@
-.advantages {
+.advantagesWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EEE9;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+.advantages {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: #F2EEE9;
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.advantages .investDescription{
+.advantages .investDescription {
     padding-top: 10px;
     font-size: 16px;
     line-height: 28px;
@@ -21,7 +26,7 @@
 }
 
 .advantages h2,
-.advantageItem h3  {
+.advantageItem h3 {
     color: #e1886c;
 }
 
@@ -34,7 +39,7 @@
 
 }
 
-.advantageItem p{
+.advantageItem p {
     font-size: 14px;
     font-weight: 300;
     padding-bottom: 25px;
@@ -51,4 +56,13 @@
 .advantageItem img {
     width: 64px;
     height: 64px;
+}
+
+.sectionDividerImg{
+    padding: 40px 0 0;
+    width: 100%;
+    height: 400px;
+    max-height: 50%;
+    object-fit: cover;
+    align-self: center;
 }

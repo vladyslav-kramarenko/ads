@@ -43,26 +43,28 @@ const advantagesData: Advantage[] = [
 
 const Advantages: React.FC = () => {
     return (
-        <section className={styles.advantages}>
-            <h2>INVEST WISELY</h2>
-            <div className={styles.investDescription}>
-                <p>Investment returns – up to 35% per annum</p>
-                <p>Expected project payback – 8-10 years</p>
-                <p>ROI – 12%</p>
-            </div>
-            <a className={"orangeButton"} href={"#quiz"}>Get detailed proposal</a>
-            <div className={styles.advantagesList}>
-                {advantagesData.map((advantage, index) => (
-                    <div key={index} className={styles.advantageItem}>
-                        <img src={diamondIcon} alt={advantage.title} width="128" height="128"/>
-                        <h3>{advantage.title}</h3>
-                        <p>{advantage.description}</p>
-                    </div>
-                ))}
-            </div>
-            <a className={"orangeButton"} href={"#quiz"}>Request a consultation</a>
+        <section className={styles.advantagesWrapper}>
+            <div className={styles.advantages}>
+                <h2>INVEST WISELY</h2>
+                <div className={styles.investDescription}>
+                    <p>Investment returns – up to 35% per annum</p>
+                    <p>Expected project payback – 8-10 years</p>
+                    <p>ROI – 12%</p>
+                </div>
+                <a className={"orangeButton"} href={"#quiz"}>Get detailed proposal</a>
+                <div className={styles.advantagesList}>
+                    {advantagesData.map((advantage, index) => (
+                        <div key={index} className={styles.advantageItem}>
+                            <img src={diamondIcon} alt={advantage.title} width="128" height="128"/>
+                            <h3>{advantage.title}</h3>
+                            <p>{advantage.description}</p>
+                        </div>
+                    ))}
+                </div>
+                <a className={"orangeButton"} href={"#quiz"}>Request a consultation</a>
 
-            <img className="sectionDividerImg" src={"img/img_1.png"}/>
+            </div>
+            <img className={styles.sectionDividerImg} src={"img/img_1.png"}/>
         </section>
     );
 };
