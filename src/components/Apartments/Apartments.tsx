@@ -6,7 +6,7 @@ const apartmentData = [
     {
         title: "BEDROOM RESIDENCE (1+1)",
         imageSrc: "/img/p-001_min-min.png",
-        fileSrc: "/img/p-001_min-min.png",
+        fileSrc: "/img/p-001.pdf",
         totalArea: "42.00 m²",
         areaDetails: [
             {label: "Functional area", size: "38.70 m²"},
@@ -19,7 +19,7 @@ const apartmentData = [
     {
         title: "BEDROOM RESIDENCE (2+1)",
         imageSrc: "/img/p-002_min-min.png",
-        fileSrc: "/img/p-002_min-min.png",
+        fileSrc: "/img/p-002.pdf",
         totalArea: "77.00 m²",
         areaDetails: [
             {label: "Functional area", size: "71.15 m²"},
@@ -32,7 +32,7 @@ const apartmentData = [
     {
         title: "BEDROOM RESIDENCE (1+1)",
         imageSrc: "/img/p-003_min-min.png",
-        fileSrc: "/img/p-003_min-min.png",
+        fileSrc: "/img/p-003.pdf",
         totalArea: "77.00 m²",
         areaDetails: [
             {label: "Functional area", size: "71.15 m²"},
