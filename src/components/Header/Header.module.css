@@ -1,22 +1,27 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #363030;
+    max-height: 100%;
+    width: 100%;
+}
+
 .header {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
-    /*align-items: left;*/
-    /*justify-content: left;*/
-    background-color: #363030;
     color: white;
     text-align: center;
+    align-items: center;
 }
 
-.headerText{
+.headerText {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-.header .logo img{
+.header .logo img {
     padding-top: 50px;
     width: 100px;
 }
@@ -29,50 +34,53 @@
     padding: 20px 0;
 }
 
-/*.header .title,*/
-/*.header .subtitle,*/
-/*.header .description{*/
-/*    max-width: 400px;*/
-/*}*/
-
 .header .subtitle {
-    padding: 3px 10px;
     line-height: 1.5;
     font-size: 26px;
     font-weight: 700;
-    /*text-transform: uppercase;*/
-    /*padding: 3px 10px;*/
     width: 268px;
-    /*font-size: 1.2rem;*/
-    /*color: #3a8a63;*/
-    /*background-color: #3a8a63;*/
 }
 
-.header button, .header .headerText a{
-    /*width: 100%;*/
-    /*max-width: 268px;*/
-    /*font-size: 18px;*/
-    /*!*height: 59.788px;*!*/
-    /*height: 50px;*/
-    /*margin: 40px 0 0;*/
-    /*!*padding: 10px 40px;*!*/
-    /*text-decoration: none;*/
-    /*align-content: center;*/
+.header .subtitle p {
+    padding: 5px 0;
+}
+
+.header button, .header .headerText a {
     margin-bottom: 50px;
 }
 
-.header .description{
+.header .description {
 
     font-size: 18px;
     padding: 20px 0 0;
 }
 
 
+.sectionDividerImg {
+    padding: 20px;
+    max-height: 600px;
+    object-fit: cover;
+    align-self: center;
+    overflow-x: hidden;
+}
+
 @media (max-width: 800px) {
-    .header .headerImg{
+
+    .sectionDividerImg {
+        width: 100%;
+        height: 400px;
+        padding: 0;
+    }
+
+    .header .headerImg {
         margin: 0;
     }
+
     .headerText {
         padding: 10px;
+    }
+
+    .headerWrapper {
+        flex-direction: column;
     }
 }
