@@ -1,16 +1,34 @@
-.apartments {
+.apartmentsSection {
     background-color: #625D5B;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.apartments h3{
+.apartments {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px; /* Space between apartments */
+}
+
+.apartments .div {
+    max-width: 33%;
+}
+
+.apartmentsSection h3 {
     color: white;
 }
 
-.apartments h3 span{
-
-    padding:10px 5px ;
+@media (min-width: 800px) {
+    .apartments {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
