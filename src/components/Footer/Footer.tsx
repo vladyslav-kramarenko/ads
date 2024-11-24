@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.ctaSection}>
-                <a href="#quiz" className={"orangeButton"}>
+                <a href={"#quiz"} className={"orangeButton"}>
                     {t("footer.cta")}
                 </a>
             </div>
