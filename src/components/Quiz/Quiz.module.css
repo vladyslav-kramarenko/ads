@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.quizBody{
+.quizBody {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -43,33 +43,36 @@
 }
 
 .quiz .active {
-    background-color: #3a8a63; /* Green background for selected option */
+    background-color: #3a8a63;
     color: #fff;
     font-weight: bold;
     border: none;
 }
 
-.navButtons{
+.navButtons {
     align-content: end;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.quiz .nextButton {
-    background-color: #3a8a63;
-    color: #fff;
-    width: 100px;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
+.quiz .nextButton, .quiz .prevButton, .quiz .submitButton {
+    width: 50%;
     cursor: pointer;
     text-transform: lowercase;
+    font-weight: bold;
 }
 
-.quiz .nextButton:hover {
+.quiz .nextButton, .quiz .submitButton {
+    background-color: #3a8a63;
+    color: #fff;
+    /*border: none;*/
+    /*padding: 10px 20px;*/
+    /*display: inline-block;*/
+    /*margin-top: 20px;*/
+}
+
+.quiz .nextButton:hover, .quiz .submitButton:hover {
     background-color: #2e6b4f;
 }
 
@@ -81,3 +84,84 @@
     border-radius: 5px;
     font-size: 1rem;
 }
+
+.alignRight {
+    justify-content: flex-end;
+}
+
+.contactInfo {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactInfo input,
+.contactInfo .react-phone-number-input__input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/*.contactInfo .agree {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*.contactInfo .agree input {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+.contactInfo .submitButton {
+    background-color: #3a8a63;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contactInfo .submitButton:hover {
+    background-color: #2e6b4f;
+}
+
+.policyContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.policyContainer .policyCheckbox{
+
+    width: auto;
+    margin-right: 10px;
+    margin-left: 4px;
+}
+
+.policyCheckbox{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.policyLabel {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.policyLabel a {
+    color: #3a8a63;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
