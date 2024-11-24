@@ -8,6 +8,7 @@
     "housing": "Housing for yourself",
     "investment": "Investment for resale",
     "other": "Other",
+
     "next": "Next",
     "prev": "Prev",
     "investmentAmount": "Investment amount?",
@@ -15,10 +16,32 @@
     "namePlaceholder": "Name",
     "phonePlaceholder": "Phone",
     "emailPlaceholder": "Email",
-    "send": "Send"
+    "send": "Send",
+    "pleaseFillAllFields": "Please fill all fields",
+    "thankYouMessage": "Thank you for your submission!",
+    "agreeToPolicy": "I agree to the",
+    "policyLink": "privacy policy",
+    "submit": "Submit"
   },
   "about": {
     "title": "ABOUT",
     "description": "DESIRE is a premium hotel-residential complex located in Antalya..."
+  },
+  "partners": {
+    "title": "Development and Management",
+    "subtitle": "We have combined the efforts of three strong players to design and build your home quickly and efficiently, with 5-star service and exceptional management.",
+    "teusGroupDescription": "Teus Group — the general contractor responsible for organizing and implementing the entire construction process. Its organizational and management skills, experience, and expertise ensure high quality within defined timelines.",
+    "zhytlobudDescription": "Zhytlobud-2 — a full-cycle company with 80 years of market experience. Since 2000, it has built and commissioned over 1 million square meters of residential and commercial real estate.",
+    "bestWesternDescription": "The Desire project is part of the globally renowned Best Western hotel network, offering legendary service and high standards for residents and guests.",
+    "detailsButton": "Learn more"
+  },
+  "footer": {
+    "cta": "Request a Consultation",
+    "contacts": "Contacts",
+    "copyright": "All rights reserved."
+  },
+  "modal": {
+    "close": "Close"
   }
+
 }

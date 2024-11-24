@@ -1,24 +1,46 @@
 {
   "header": {
-    "title": "Reliable Real Estate Investment",
-    "subTitle": "Up to 40% Profit"
+    "title": "Надежные инвестиции в недвижимость",
+    "subTitle": "До 40% прибыли"
   },
   "quiz": {
-    "question1": "What is your primary reason for choosing real estate?",
-    "housing": "Housing for yourself",
-    "investment": "Investment for resale",
-    "other": "Other",
-    "next": "Next",
-    "prev": "Prev",
-    "investmentAmount": "Investment amount?",
-    "contactDetails": "Contact details",
-    "namePlaceholder": "Name",
-    "phonePlaceholder": "Phone",
-    "emailPlaceholder": "Email",
-    "send": "Send"
+    "question1": "Какова ваша основная причина выбора недвижимости?",
+    "housing": "жилье для себя со сдачей в аренду",
+    "investment": "Инвестиция c последующей продажей",
+    "other": "Другое",
+
+    "next": "Далее",
+    "prev": "Назад",
+    "investmentAmount": "Сумма инвестиций?",
+    "contactDetails": "Контактные данные",
+    "namePlaceholder": "Имя",
+    "phonePlaceholder": "Телефон",
+    "emailPlaceholder": "Электронная почта",
+    "send": "Отправить",
+    "pleaseFillAllFields": "Пожалуйста, заполните все поля",
+    "thankYouMessage": "Спасибо за вашу заявку!",
+    "agreeToPolicy": "Я согласен с",
+    "policyLink": "политикой конфиденциальности",
+    "submit": "Отправить"
   },
   "about": {
-    "title": "ABOUT",
-    "description": "DESIRE is a premium hotel-residential complex located in Antalya..."
+    "title": "О НАС",
+    "description": "DESIRE — это премиальный жилой комплекс отельного типа, расположенный в Анталии..."
+  },
+  "partners": {
+    "title": "Разработка и управление",
+    "subtitle": "Мы объединили усилия трех сильных игроков, чтобы быстро и эффективно спроектировать и построить ваш дом с сервисом уровня 5 звезд и отличным управлением.",
+    "teusGroupDescription": "Teus Group — генеральный подрядчик, ответственный за организацию и реализацию всего строительного процесса. Его организационные и управленческие навыки, опыт и компетенции обеспечивают высокое качество в установленные сроки.",
+    "zhytlobudDescription": "Жилстрой-2 — компания полного цикла с 80-летним опытом на рынке. С 2000 года построено и введено в эксплуатацию более 1 миллиона квадратных метров жилой и коммерческой недвижимости.",
+    "bestWesternDescription": "Проект Desire является частью всемирно известной гостиничной сети Best Western, предлагающей легендарный сервис и высокие стандарты для жителей и гостей.",
+    "detailsButton": "Узнать больше"
+  },
+  "footer": {
+    "cta": "Заказать консультацию",
+    "contacts": "Контакты",
+    "copyright": "Все права защищены."
+  },
+  "modal": {
+    "close": "Закрыть"
   }
 }
