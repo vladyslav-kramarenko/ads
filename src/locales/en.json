@@ -21,7 +21,8 @@
     "thankYouMessage": "Thank you for your submission!",
     "agreeToPolicy": "I agree to the",
     "policyLink": "privacy policy",
-    "submit": "Submit"
+    "submit": "Submit",
+    "errorMessage": "Error during sending the request"
   },
   "about": {
     "title": "ABOUT",
