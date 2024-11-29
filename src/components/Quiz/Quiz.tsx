@@ -36,9 +36,9 @@ const Quiz: React.FC<QuizProps> = ({ questionSet }) => {
     useEffect(() => {
         const fetchLocation = async () => {
             try {
-                const response = await fetch('https://ipapi.co/json/');
-                const data = await response.json();
-                setLocation(`${data.city}, ${data.region}, ${data.country_name}`);
+                const locationResponse = await fetch('https://proxy.teus-group.com/api/location');
+                const locationData = await locationResponse.json();
+                setLocation(`${locationData.city}, ${locationData.region}, ${locationData.country_name}`);
             } catch (error) {
                 console.error('Error fetching location:', error);
             }
@@ -83,9 +83,10 @@ const Quiz: React.FC<QuizProps> = ({ questionSet }) => {
 
         const utmParams = saveUTMParams();
 
-        const hubSpotData = {
+        const hubSpotContactData = {
             firstname: name,
             phone: phone,
+            email: email,
             hs_language: "en",
             website: "ads.desire-antalya.com",
             lifecyclestage: 'lead',
@@ -93,8 +94,9 @@ const Quiz: React.FC<QuizProps> = ({ questionSet }) => {
             ...utmParams,
         };
 
-        const dealData = {
+        const hubSpotDealData = {
             properties: {
+                email: email,
                 dealname: name,
                 dealstage: hubspotDealstage,
                 pipeline: hubspotPipeline,
@@ -108,6 +110,7 @@ const Quiz: React.FC<QuizProps> = ({ questionSet }) => {
         const gPlusData = {
             name: name,
             phone: phone,
+            email: email,
             note: notes,
             lang: languageKey,
             location: location,
@@ -115,10 +118,10 @@ const Quiz: React.FC<QuizProps> = ({ questionSet }) => {
         };
 
         try {
-            const contactResponse = await createContact(hubSpotData);
+            const contactResponse = await createContact(hubSpotContactData);
             const contactId = contactResponse.id;
 
-            await createDeal(contactId, dealData);
+            await createDeal(contactId, hubSpotDealData);
             await createGPlusEntry(gPlusData);
 
             setModalMessage(t("quiz.thankYouMessage"));
