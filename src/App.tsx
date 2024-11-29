@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {BrowserRouter as Router, Routes, Route, Navigate, useParams} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate, useParams, useLocation} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Quiz from './components/Quiz/Quiz';
 import { questionSets } from "./data/questionSets";
@@ -39,6 +39,13 @@ const LanguageWrapper: React.FC = () => {
     );
 };
 
+const RedirectWithQuery: React.FC = () => {
+    const location = useLocation();
+    const search = location.search; // Preserve query parameters
+
+    return <Navigate replace to={`/en${search}`} />;
+};
+
 const App: React.FC = () => {
     useEffect(() => {
         saveUTMParams();
@@ -46,7 +53,7 @@ const App: React.FC = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Navigate replace to="/en"/>}/>
+                <Route path="/" element={<RedirectWithQuery />} />
                 <Route path="/:lang" element={<LanguageWrapper/>}/>
 
                 <Route path="/policy" element={<PolicyPageUa/>}/>
