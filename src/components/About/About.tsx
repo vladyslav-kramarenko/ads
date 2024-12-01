@@ -1,26 +1,24 @@
 import React from "react";
 import styles from './About.module.css';
+import { useTranslation } from "react-i18next";
 
 const About: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <section className={styles.about}>
             <div className={styles['about-title']}>
-                <h2>ABOUT</h2>
+                <h2>{t("about.title")}</h2>
             </div>
             <div className={styles['about-content']}>
                 <p>
-                    DESIRE is a premium hotel-residential complex located in a new modern district at the heart of
-                    Antalya,
-                    one of the top 10 most visited cities in the world.
+                    {t("about.description1")}
                 </p>
                 <p>
-                    The project is actively under construction, but there is still an opportunity to invest under
-                    attractive
-                    conditions!
+                    {t("about.description2")}
                 </p>
                 <p className={styles.completion}>
-                    Completion is scheduled for
-                    <span className={"accent"}>Q4&nbsp;2025!</span>
+                    {t("about.completion")}
+                    <span className={"accent"}>{t("about.kvartal")}&nbsp;2025!</span>
                 </p>
             </div>
         </section>
