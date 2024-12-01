@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './styles.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import insertGtmScript from "./util/Gtm";
+import insertFacebookPixel from "./util/FBPixel";
+
+insertGtmScript();
+insertFacebookPixel();
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
