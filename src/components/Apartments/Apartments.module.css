@@ -13,12 +13,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1400px;
     justify-content: space-evenly;
     gap: 20px; /* Space between apartments */
 }
 
 .apartments .div {
     max-width: 33%;
+}
+
+.hurryToBookMessage{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .apartmentsSection h3 {
