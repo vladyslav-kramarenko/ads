@@ -1,60 +1,80 @@
 import React from 'react';
 import Apartment from '../Apartment/Apartment';
 import styles from './Apartments.module.css';
+import {useTranslation} from "react-i18next";
 
 const apartmentData = [
     {
-        title: "BEDROOM RESIDENCE (1+1)",
+        titleKey: "bedroomResidence1",
         imageSrc: "/img/p-001_min-min.png",
         fileSrc: "/img/p-001.pdf",
-        totalArea: "42.00 m²",
+        totalArea: "42.00",
         areaDetails: [
-            {label: "Functional area", size: "38.70 m²"},
-            {label: "Kitchen & living room", size: "18.60 m²"},
-            {label: "Bedroom", size: "11.00 m²"},
-            {label: "Bathroom", size: "4.10 m²"},
-            {label: "Balcony", size: "5.00 m²"},
+            { labelKey: "functionalArea", size: "38.70" },
+            { labelKey: "kitchenLivingRoom", size: "18.60" },
+            { labelKey: "bedroom", size: "11.00" },
+            { labelKey: "bathroom", size: "4.10" },
+            { labelKey: "balcony", size: "5.00" },
         ],
     },
     {
-        title: "BEDROOM RESIDENCE (2+1)",
+        titleKey: "bedroomResidence2",
         imageSrc: "/img/p-002_min-min.png",
         fileSrc: "/img/p-002.pdf",
-        totalArea: "77.00 m²",
+        totalArea: "77.00",
         areaDetails: [
-            {label: "Functional area", size: "71.15 m²"},
-            {label: "Kitchen & living room", size: "21.50 m²"},
-            {label: "Bedroom", size: "13.20 m²"},
-            {label: "Bathroom", size: "4.31 m²"},
-            {label: "Balcony", size: "9.80 m²"},
+            { labelKey: "functionalArea", size: "71.15" },
+            { labelKey: "kitchenLivingRoom", size: "21.50" },
+            { labelKey: "bedroom", size: "13.20" },
+            { labelKey: "bathroom", size: "4.31" },
+            { labelKey: "balconies", size: "9.80" },
+            { labelKey: "childrenRoom", size: "9.74" },
+            { labelKey: "masterBathroom", size: "3.38" },
+            { labelKey: "hall", size: "8.81" },
         ],
     },
     {
-        title: "BEDROOM RESIDENCE (1+1)",
+        titleKey: "bedroomResidence1",
         imageSrc: "/img/p-003_min-min.png",
         fileSrc: "/img/p-003.pdf",
-        totalArea: "77.00 m²",
+        totalArea: "77.00",
         areaDetails: [
-            {label: "Functional area", size: "71.15 m²"},
-            {label: "Kitchen & living room", size: "21.50 m²"},
-            {label: "Bedroom", size: "13.20 m²"},
-            {label: "Bathroom", size: "4.31 m²"},
-            {label: "Balcony", size: "9.80 m²"},
+            {labelKey: "functionalArea", size: "38.88"},
+            {labelKey: "kitchenLivingRoom", size: "20.60"},
+            {labelKey: "bedroom", size: "10.00"},
+            {labelKey: "bathroom", size: "4.20"},
+            {labelKey: "balcony", size: "4.8"},
+            {labelKey: "terrace", size: "49.12"},
         ],
     },
 ];
 
 const Apartments: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <section className={styles.apartmentsSection}>
-            <h3 className={"accent"}>Over 60% of the complex is sold!</h3>
-            <div className={styles.apartments}
-            >
+            <h3 className={"accent"}>{t("apartments.soldOutMessage")}</h3>
+            <p className={styles.hurryToBookMessage}>{t("apartments.HurryToBookMessage")}</p>
+            <p className={styles.hurryToBookMessage}>{t("apartments.HurryToBookMessage2")}</p>
+            <div className={styles.apartments}>
                 {apartmentData.map((apartment, index) => (
-                    <Apartment key={index} {...apartment} />
+                    <Apartment
+                        key={index}
+                        title={t(`apartments.titles.${apartment.titleKey}`)}
+                        totalArea={`${apartment.totalArea} ${t("apartments.areaUnit")}`}
+                        imageSrc={apartment.imageSrc}
+                        fileSrc={apartment.fileSrc}
+                        areaDetails={apartment.areaDetails.map((detail) => ({
+                            label: t(`apartments.labels.${detail.labelKey}`),
+                            size: `${detail.size} ${t("apartments.areaUnit")}`,
+                        }))}
+                    />
                 ))}
             </div>
-            <a className={"orangeButton"} href={"#quiz"}>Get price</a>
+            <a className={"orangeButton"} href={"#quiz"}>
+                {t("apartments.getPrice")}
+            </a>
         </section>
     );
 };
