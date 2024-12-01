@@ -16,11 +16,15 @@ const Header: React.FC = () => {
                     <p className={"accent"}>{t('header.subTitle')}</p>
                 </span>
                     <p className={styles.description}>
-                        DESIRE <br/> Premium Hotel-Residential Complex
+                        DESIRE
                         <br/>
-                        (Antalya, Turkey)
+                        {t('header.premiumComplex')}
+                        <br/>
+                        ({t('header.location')})
                     </p>
-                    <a className={"orangeButton"} href={"#quiz"}>Leave a request</a>
+                    <a className={"orangeButton"} href={"#quiz"}>
+                        {t('header.requestBtn')}
+                    </a>
                 </div>
             </div>
             <img className={styles.sectionDividerImg} src={"img/img.png"}/>
