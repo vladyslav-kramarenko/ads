@@ -1,8 +1,78 @@
 {
   "header": {
     "title": "Güvenilir Gayrimenkul Yatırımı",
-    "subTitle": "Yüzde 40'a Kadar Kar"
+    "subTitle": "Yüzde 40'a Kadar Kar",
+    "premiumComplex": "Lüks Otel ve Konut Kompleksi",
+    "location": "Antalya, Türkiye",
+    "requestBtn": "BİZE ULAŞIN"
   },
+  "about": {
+    "title": "About",
+    "description1": "DESIRE – lüks otel ve konut kompleksi, dünyanın en çok ziyaret edilen ilk 10 şehri arasında yer alan Antalya'nın kalbinde, modern bir bölgede yer almaktadır.",
+    "description2": "Proje şu anda aktif olarak inşa ediliyor, ancak hala cazip şartlarla projeye dahil olma fırsatı var!",
+    "completion": "Teslimat",
+    "kvartal": "4. çeyreği"
+  },
+  "advantages": {
+    "investWisely": "AKILLI YATIRIM YAPIN",
+    "investmentReturns": "Yatırım Getirisi – Yıllık %35'e kadar",
+    "payback": "Beklenen Proje Geri Dönüşü – 8-10 yıl",
+    "roi": "ROI",
+    "requestConsultation": "DANıŞMANLıK HIZMETI AL!",
+    "getDetailedProposal": "DETAYLı TEKLIF ALıN",
+    "items": {
+      "investmentAttractiveArea": {
+        "title": "ANTALYA'NIN YATIRIM İÇİN EN CAZİP BÖLGESİ",
+        "description": "DESIRE, havaalanına yakın, modern ve dinamik Altıntaş bölgesinde yer alıyor ve bu bölge büyük bir hızla gelişiyor! İş altyapısı, alışveriş merkezleri, restoranlar, mağazalar, eğlence ve çocuk eğitimi için alanlar dünya genelinden misafirleri ve sakinleri çekiyor.",
+        "description2": "Bölgenin aktif gelişimi yatırım cazibesini artırıyor, bu da onu hızla geri dönen ve kazanç sağlamaya başlayan mükemmel bir seçenek haline getiriyor!"
+      },
+      "highLevelOfComfort": {
+        "title": "YÜKSEK KONFOR SEVİYESİ",
+        "description": "Beş yıldızlı otel hizmetine sahip daireler, ev hissini kusursuz bir şekilde tüm isteklerinizi yerine getiren bir yerle birleştiriyor.",
+        "description2": "Sahipler ve sakinler, restoranlar, wellness alanı, çatı terasları ve dinlenme alanları gibi otelin tüm altyapısına 7/24 erişim sağlıyor."
+      },
+      "investInApartments": {
+        "title": "DAİRELERE YATIRIM YAPIN",
+        "description": "Antalya'da gayrimenkul talebi sadece artıyor, bu yüzden satın alınan rezidans veya daireler, yeniden satış veya kiralama için karlı bir proje olacak.",
+        "description2": "Denize yakınlığı, sıcak iklimi ve gelişmiş altyapısı ile yıl boyunca kiracılar çekebilirsiniz."
+      },
+      "desireInvestProgram": {
+        "title": "DESIRE INVEST PROGRAMI",
+        "description": "Program, yatırımcılara otel odalarında pay satın alma imkanı sunarak yüksek pasif gelire kapı açıyor.",
+        "description2": "Sistem, müşterinin finansal hedeflerine göre yatırım yapma esnekliği sağlayan iki program seçeneği sunar: %25 veya %50 oda payı. Başlıca avantajlardan biri, tam tutarı yatırmak zorunda kalmadan yatırım portföyünü genişletme fırsatıdır."
+      },
+      "fiveStarComplex": {
+        "title": "UYGUN FİYATA 5☆ KOMPLEKS",
+        "description": "Zengin planlama seçenekleri, büyük panoramik pencereler, özenle düşünülmüş iç mekanlar ve çeşitli hizmetler, farklı yaşam tarzlarına sahip sakinlerin rahat edeceği benzersiz bir alan yaratıyor.",
+        "description2": "Komplekste sadece 73 daire ve 59 otel odası bulunmaktadır!"
+      }
+    }
+  },
+  "apartments": {
+    "soldOutMessage": "Kompleksin %60'ından fazlası satıldı!",
+    "HurryToBookMessage": "İnşaattan fiyatına en iyi daireleri ayırtın ve dairenizi veya oteldeki hissenizi 2025 sonuna kadar alın!",
+    "HurryToBookMessage2": "",
+    "getPrice": "Fiyat Al",
+    "areaUnit": "m²",
+    "totalArea": "Toplam Alan (brüt)",
+    "labels": {
+      "functionalArea": "Fonksiyonel Alan",
+      "kitchenLivingRoom": "Mutfak & Oturma Odası",
+      "bedroom": "Yatak Odası",
+      "bathroom": "Banyo",
+      "balcony": "Balkon",
+      "balconies": "Balkonlar",
+      "childrenRoom": "Çocuk Odası",
+      "masterBathroom": "Ebeveyn Banyosu",
+      "hall": "Hol",
+      "terrace": "Teras"
+    },
+    "titles": {
+      "bedroomResidence1": "YATAK ODALI REZIDANS (1+1)",
+      "bedroomResidence2": "YATAK ODALI REZIDANS (2+1)"
+    }
+  },
+
   "quiz": {
     "question1": "Gayrimenkul seçiminizin başlıca sebebi nedir?",
     "housing": "Kendi kullanımım için",
@@ -11,21 +81,20 @@
 
     "next": "İleri",
     "prev": "Geri",
+    "send": "Gönder",
+    "submit": "Gönder",
+
     "investmentAmount": "Yatırım miktarı?",
     "contactDetails": "İletişim bilgileri",
     "namePlaceholder": "İsim",
     "phonePlaceholder": "Telefon",
     "emailPlaceholder": "E-posta",
-    "send": "Gönder",
+
+
     "pleaseFillAllFields": "Lütfen tüm alanları doldurun",
     "thankYouMessage": "Başvurunuz için teşekkür ederiz!",
     "agreeToPolicy": "Şu şartları kabul ediyorum",
-    "policyLink": "gizlilik politikası",
-    "submit": "Gönder"
-  },
-  "about": {
-    "title": "HAKKIMIZDA",
-    "description": "DESIRE, Antalya'da yer alan birinci sınıf otel-konaklama kompleksidir..."
+    "policyLink": "gizlilik politikası"
   },
   "partners": {
     "title": "Geliştirme ve Yönetim",

@@ -1,17 +1,105 @@
 {
   "header": {
     "title": "Reliable Real Estate Investment",
-    "subTitle": "Up to 40% Profit"
+    "subTitle": "Up to 40% Profit",
+    "premiumComplex": "Premium Hotel-Residential Complex",
+    "location": "Antalya, Turkey",
+    "requestBtn": "Leave a request"
   },
-  "quiz": {
-    "question1": "What is your primary reason for choosing real estate?",
-    "housing": "Housing for yourself",
-    "investment": "Investment for resale",
-    "other": "Other",
+  "about": {
+    "title": "About",
+    "description1": "DESIRE is a premium hotel-residential complex located in a new modern district at the heart of Antalya, one of the top 10 most visited cities in the world.",
+    "description2": "The project is actively under construction, but there is still an opportunity to invest under attractive conditions!",
+    "completion": "Completion is scheduled for",
+    "kvartal": "Q4"
+  },
+  "advantages": {
+    "investWisely": "INVEST WISELY",
+    "investmentReturns": "Investment returns – up to 35% per annum",
+    "payback": "Expected project payback – 8-10 years",
+    "roi": "ROI",
+    "requestConsultation": "Request a consultation",
+    "getDetailedProposal": "Get detailed proposal",
+    "items": {
+      "investmentAttractiveArea": {
+        "title": "INVESTMENT-ATTRACTIVE AREA",
+        "description": "DESIRE is located near the airport in the modern and dynamic Altintash district, which is developing at a colossal pace! Business infrastructure, shopping malls, restaurants, and shops, places for leisure and children's education attract guests and residents from around the world.",
+        "description2": "The active development of the area increases its investment appeal, making it an excellent option that will quickly pay off and start generating income!"},
+      "highLevelOfComfort": {
+        "title": "HIGH LEVEL OF COMFORT",
+        "description": "Apartments with the service of a five-star hotel combine the feeling of home with a place where all your desires are impeccably met.",
+        "description2": "Owners and residents have 24/7 access to the hotel's entire infrastructure – restaurants, wellness area, rooftop terraces, and relaxation patios."
+      },
+      "investInApartments": {
+        "title": "INVEST IN APARTMENTS",
+        "description": "Demand for real estate in Antalya is only growing, so the acquired residence or apartments will become a profitable project for resale or rental. With proximity to the sea, a warm climate, and developed infrastructure, you can attract tenants year-round.",
+        "description2": ""
+      },
+      "desireInvestProgram": {
+        "title": "DESIRE INVEST PROGRAM",
+        "description": "The program offers investors a unique opportunity to purchase a share in hotel rooms, opening doors to high passive income.",
+        "description2": "The system offers two program options: 25% or 50% share in a room, providing flexibility and the ability to invest according to the client's financial goals. One of the key advantages is the ability to expand the investment portfolio without the need to invest the full amount."
+      },
+      "fiveStarComplex": {
+        "title": "5☆ COMPLEX AT A FAVORABLE PRICE",
+        "description": "A rich collection of layouts, large panoramic windows, meticulously thought-out interiors, and a variety of services create a unique space where residents with different lifestyles will feel comfortable.",
+        "description2": "There are only 73 apartments and 59 hotel rooms with business-class finishing in the complex!"
+      }
+    }
+  },
+  "apartments": {
+    "soldOutMessage": "Over 60% of the complex is sold!",
+    "HurryToBookMessage": "Hurry to book the best apartments at construction prices",
+    "HurryToBookMessage2": "and get your apartment or share in the hotel by the end of 2025!",
+    "getPrice": "Get price",
+    "areaUnit": "m²",
+    "totalArea": "Total area (brutto)",
+    "labels": {
+      "functionalArea": "Functional area",
+      "kitchenLivingRoom": "Kitchen & living room",
+      "bedroom": "Bedroom",
+      "bathroom": "Bathroom",
+      "balcony": "Balcony",
+      "balconies": "Balconies",
+      "childrenRoom": "Children Room",
+      "masterBathroom": "Master Bathroom",
+      "hall": "Hall",
+      "terrace": "Terrace"
+    },
+    "titles": {
+      "bedroomResidence1": "BEDROOM RESIDENCE (1+1)",
+      "bedroomResidence2": "BEDROOM RESIDENCE (2+1)"
+    }
+  },
 
+  "quiz": {
+    "reason": {
+      "question": "What is your primary reason for choosing real estate?",
+      "housing": "Housing for yourself",
+      "investment": "Investment for resale",
+      "other": "Other"
+    },
     "next": "Next",
     "prev": "Prev",
-    "investmentAmount": "Investment amount?",
+    "investmentAmount": {
+      "question": "Investment amount?"
+    },
+    "whenPlanToBuy": {
+      "question": "When do you plan to purchase real estate?",
+      "nearFuture": "In the near future",
+      "withinMonth": "Within a month",
+      "within6Months": "Within half a year",
+      "notSure": "Difficult to answer, consultation is needed"
+    },
+    "messenger": {
+      "question": "Choose the messenger in which you are most comfortable communicating",
+      "other": "Other communication options"
+    },
+    "investExp": {
+      "question": "Have you had experience investing in foreign real estate?"
+    },
+    "yes": "Yes",
+    "no": "No",
     "contactDetails": "Contact details",
     "namePlaceholder": "Name",
     "phonePlaceholder": "Phone",
@@ -23,10 +111,6 @@
     "policyLink": "privacy policy",
     "submit": "Submit",
     "errorMessage": "Error during sending the request"
-  },
-  "about": {
-    "title": "ABOUT",
-    "description": "DESIRE is a premium hotel-residential complex located in Antalya..."
   },
   "partners": {
     "title": "Development and Management",
@@ -44,5 +128,4 @@
   "modal": {
     "close": "Close"
   }
-
 }
