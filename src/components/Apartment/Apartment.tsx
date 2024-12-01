@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Apartment.module.css';
+import {useTranslation} from "react-i18next";
 
 interface ApartmentProps {
     title: string;
@@ -13,19 +14,21 @@ interface ApartmentProps {
 }
 
 const Apartment: React.FC<ApartmentProps> = ({ title, fileSrc, imageSrc, areaDetails, totalArea }) => {
+
+    const { t } = useTranslation();
     const handleClick = () => {
         window.open(fileSrc, "_blank");
     };
 
     return (
-        <div className={styles.apartment} onClick={handleClick}>
+        <div className={styles.apartment} >
             <div className={styles.header}>
                 <h3>{title}</h3>
             </div>
-            <img src={imageSrc} alt={title} className={styles.image} />
+            <img src={imageSrc} alt={title} className={styles.image} onClick={handleClick}/>
             <div className={styles.details}>
                 <div className={styles.totalArea}>
-                    <span>Total area (brutto)</span>
+                    <span>{t("apartments.totalArea")}</span>
                     <span className="accent">{totalArea}</span>
                 </div>
                 {areaDetails.map((detail, index) => (
